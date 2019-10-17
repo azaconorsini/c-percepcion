@@ -1,0 +1,90 @@
+.row-social-buttons {
+  min-height: 25px;
+  background-color: #222222;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #FFF;
+}
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #E0AA2E;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  color: #FFF;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #eac571;
+}
+ul.list-tags {
+  display: block;
+  font-size: 14px;
+  color: #777777;
+}
+ul.list-tags li {
+  margin-right: 8px;
+  padding: 0;
+}
+ul.list-tags li a {
+  color: #777777;
+  border-bottom: 2px solid #eeeeee;
+}
+ul.list-tags li a:hover {
+  color: #333333;
+  border-bottom-color: #777777;
+}
+.carros, .motos, .autobuses, .camiones {
+  font-weight: bold;
+}
+.buttons-default {
+  color: #222;
+}
+.buttons-custom {
+  color: #DDD;
+}
+.buttons-base {
+  color: #000;
+}
+.link + .link.link-2 {
+  color: red;
+}
+.link .link {
+  color: orange;
+}
+.link.link {
+  color: white;
+}
+.link,
+.linkend {
+  color: black;
+}
+.custom-images {
+  background-image: url("../images//banner/img.jpg");
+}
+.propiedades {
+  color: #666;
+  background-color: #DDD;
+}
+button.example:hover,
+button.example:focus {
+  border: 1px solid green;
+}
+.contendor-example {
+  width: 100%;
+  height: 100%;
+}
+.padding-example {
+  padding: 33px;
+}

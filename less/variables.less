@@ -1,0 +1,111 @@
+//################################################################
+//# COLORES PRINCIPALES
+//################################################################
+
+// Colores bases del sistema
+@color-purple:       #451350;
+@color-lightblue:    #2DAABC;
+@color-lightgolden:  #E0AA2E;
+
+// Colores grises
+@color-gray-base:    #000;
+@color-gray-dark:    lighten(@color-gray-base, 20%);   // #333
+@color-gray-darker:  lighten(@color-gray-base, 13.5%); // #222
+@color-gray:         lighten(@color-gray-base, 33.5%); // #555
+@color-gray-light:   lighten(@color-gray-base, 46.7%); // #777
+@color-gray-lighter: lighten(@color-gray-base, 93.5%); // #EEE
+
+// Colores de fondo
+@bg-body:            #FFF;
+@bg-gray-lighter:    @color-gray-lighter; // #EEE
+@bg-lightblue:       @color-lightblue;    // #2DAABC
+@bg-lightgolden:     @color-lightgolden;  // #E0AA2E
+
+// Colores de textos
+@text-base:          @color-gray-dark;    // #333
+@text-muted:         @color-gray-lighter; // #777 
+
+// Colores de enlaces
+@link-base:          @color-lightblue;  // #2DAABC
+@link-base-hover:    @color-gray-dark; // #333;
+@link-inverse:       @color-gray-light;
+@link-inverse-hover: @color-gray-dark;
+
+//################################################################
+//# TIPOGRAFIAS BASE
+//################################################################
+
+// Fuentes principales
+@font-family-base:   'Lato', Tahoma, sans-serif;
+@font-family-normal: 'Titillium Web', Tahoma, sans-serif;
+@font-family-extra:  'Great Vibes', cursive;
+
+// Tamaño de fuentes 
+@font-size-base:     16px;
+@font-size-small:    ceil((@font-size-base * 0.85)); // 14px
+@font-size-large:    ceil((@font-size-base * 1.12)); // 18px
+
+// Tamaño para encabezados
+@font-size-h1:       floor((@font-size-base * 2.25)); // 36px
+@font-size-h2:       floor((@font-size-base * 1.88)); // 30px
+@font-size-h3:       ceil((@font-size-base * 1.5));   // 24px
+@font-size-h4:       ceil((@font-size-base * 1.12));  // 18px
+@font-size-h5:       @font-size-base;                 // 16px
+@font-size-h6:       ceil((@font-size-base * 0.75));  // 12px
+
+@font-size-xl-h1:    floor((@font-size-base * 4.2));  // 66px
+@font-size-xl-h2:    floor((@font-size-base * 3.8));  // 60px
+@font-size-xl-h3:    ceil((@font-size-base * 3.15));  // 50px
+@font-size-xl-h4:    ceil((@font-size-base * 2.8));  
+
+@font-weight-light:         300;
+@font-weight-regular:       400;
+@font-weight-bold:          700;
+@font-weight-extrabold:     900;
+
+// Relleno
+@padding-base-vertical:     6px;
+@padding-base-horizontal:   12px;
+
+@padding-small-vertical:    2px;
+@padding-small-horizontal:  5px;
+
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  16px;
+
+@padding-xlarge-vertical:   15px;
+@padding-xlarge-horizontal: 25px;
+
+// Bordes redondeados
+@border-radius-base:        4px;
+@border-radius-large:       6px;
+@borer-radius-small:        3px;
+@border-radius-xxl:         10px;
+@border-radius-none:        0px;
+
+//################################################################
+//# PROPIEDADES MEDIA QUERY
+//################################################################
+
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
+
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+
+@screen-md: 992px;
+@screen-md-min:  @screen-md;
+
+@screen-lg: 1200px;
+@screen-lg-min: @screen-lg;
+
+@screen-xs-max: (@screen-sm-min - 1); // 767px
+@screen-sm-max: (@screen-md-min - 1); // 991px
+@screen-md-maz: (@screen-lg-min - 1); // 1999px
+
+//################################################################
+//# URL´S
+//################################################################
+@images: "../images/";
+@ccs:    "../css/";
+@less:   "../less/";

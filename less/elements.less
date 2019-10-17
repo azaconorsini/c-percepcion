@@ -1,0 +1,127 @@
+@import "variables.less";
+@import "mixins.less";
+
+// Fila contenedor de redes sociales
+.row-social-buttons {
+  min-height: 25px;
+  background-color: @color-gray-darker;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #FFF;
+}
+ul.social-buttons {
+  margin-bottom: 0;
+  li {
+    a {
+      display: block;
+      background-color: @bg-lightgolden;
+      height: 30px;
+      width: 30px;
+      font-size: 15px;
+      text-align: center;
+      line-height: 30px;
+      color: #FFF;
+      .border-radius (100%);
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: lighten(@bg-lightgolden, 15%);
+      }
+    }
+  }
+}
+ul.list-tags {
+  display: block;
+  font-size: @font-size-small;
+  color: @color-gray-light;
+  li {
+    margin-right: 8px;
+    padding: 0;
+    a {
+      color: @color-gray-light;
+      border-bottom: 2px solid @color-gray-lighter;
+      &:hover {
+        color: @color-gray-dark;
+        border-bottom-color: @color-gray-light;
+      }
+    }
+  }
+}
+
+//Elementos similares en propiedades
+
+@selectores: .carros, .motos, .autobuses, .camiones;
+@{selectores} {
+  font-weight: bold;
+}
+
+// Directorio
+.buttons {
+  &-default {
+    color: #222;
+  }
+  &-custom {
+    color: #DDD;
+  }
+  &-base {
+    color: #000;
+  }
+}
+
+// Métodos para enlazar contenido
+
+.link {
+  & + &.link-2 {
+    color: red
+  }
+  & & {
+    color: orange;
+  }
+  && {
+    color: white;
+  }
+  &, &end {
+    color: black
+  }
+}
+// URL´s
+@images: "../images/";
+.custom-images {
+  background-image: url("@{images}/banner/img.jpg");
+}
+@theme-less: "../less/";
+@import "@{theme-less}/mixins.less";
+
+// Propiedades
+@property: color;
+.propiedades {
+  @{property}: #666;
+  background-@{property}: #DDD;
+}
+//Selsctores de mixin
+.my-buttom-style() {
+  &:hover, &:focus {
+    border: 1px solid green;
+  }
+}
+button {
+  &.example {
+    .my-buttom-style();
+  }
+}
+
+//Variable sde control
+@full-width: 100%;
+@full-heigth: 100%;
+
+.contendor-example {
+  width: @full-width;
+  height: @full-heigth;
+}
+.average(@x, @y) {
+  @average: ((@x + @y) / 2);
+}
+.padding-example {
+  .average(16px, 50px);
+  padding: @average;
+}
